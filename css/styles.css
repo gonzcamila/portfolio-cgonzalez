@@ -23,11 +23,11 @@ img {
 
 :root {
     /* Color */
-    --color-bg: #fcbaba;
-    --color-surface: #440b0b;
-    --color-text: #1f2937;
-    --color-muted: #e56262;
-    --color-accent: #ff21e1;
+    --color-bg: #f7f3f3;
+    --color-surface: #f6f3f3;
+    --color-text: #f6f7f9;
+    --color-muted: #eee8e8;
+    --color-accent: #faf3f9;
 
     /* Spacing — a modular scale */
     --space-sm: 0.5rem;
@@ -52,6 +52,27 @@ img {
 /* ==========================
    3. BASE ELEMENT STYLES
    ========================== */
+
+    body {
+        background-color: rgb(7, 7, 7);
+        color: #9a99e5;
+        font-size: 16px;
+        line-height: 1.5cm;
+    }
+
+    h1 { font-size: 2.5rem; line-height: 1.5cm;}
+    h2 {font-size: 2rem; line-height: 1.5cm;}
+    h3 { font-size: 1.5rem; line-height: 1.5cm;}
+
+    h1, h2, h3 { margin-bottom: 20px;}
+    p { margin-bottom: 20px;}
+    p:last-child { margin-bottom: 0; }
+
+    a { color: #9a99e5;}
+
+
+
+
 
 /* ==========================
    4. LAYOUT

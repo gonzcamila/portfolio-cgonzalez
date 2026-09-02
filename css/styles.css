@@ -49,7 +49,7 @@ img {
 
     /* existing tokens */
     --font-stack: stystem-ui, 'Segoe UI' , Tahoma, sans-serif;
-    --color-surface-alt: #f1f5f9;
+    --color-surface-alt: #020202;
     --radius-md: 8px
 }
 
@@ -75,7 +75,7 @@ img {
     p { margin-bottom: 20px;}
     p:last-child { margin-bottom: 0; }
 
-    a { color: #9a99e5;}
+    a { color: #4406ee;}
 
 
 
@@ -95,7 +95,7 @@ img {
     align-items: center;
     gap: var(--space-lg);
     padding: var(--space-lg);
-    background-color: var(black);
+    background-color: var(rgb(0, 0, 0));
     margin-bottom: var(--space-lg);
 }
 

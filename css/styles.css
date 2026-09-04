@@ -23,11 +23,11 @@ img {
 
 :root {
     /* Color */
-    --color-bg: #f7f3f3;
-    --color-surface: #f6f3f3;
-    --color-text: #f6f7f9;
-    --color-muted: #eee8e8;
-    --color-accent: #faf3f9;
+    --color-bg: #040404;
+    --color-surface: #060606;
+    --color-text: #040404;
+    --color-muted: #030303;
+    --color-accent: #020202;
 
     /* Spacing — a modular scale */
     --space-sm: 0.5rem;
@@ -49,7 +49,7 @@ img {
 
     /* existing tokens */
     --font-stack: stystem-ui, 'Segoe UI' , Tahoma, sans-serif;
-    --color-surface-alt: #020202;
+    --color-surface-alt: #ffffff;
     --radius-md: 8px
 }
 
@@ -59,8 +59,8 @@ img {
    ========================== */
 
     body {
-        background-color: rgb(0, 0, 0);
-        color: #7fede2;
+        background-color: #FFFFFF
+        color: #000000;
         font-size: 16px;
         line-height: 1.5cm;
         font-family: var(--font-stack);
@@ -75,7 +75,7 @@ img {
     p { margin-bottom: 20px;}
     p:last-child { margin-bottom: 0; }
 
-    a { color: #4406ee;}
+    a { color: #050404;}
 
 
 
@@ -95,7 +95,7 @@ img {
     align-items: center;
     gap: var(--space-lg);
     padding: var(--space-lg);
-    background-color: var(rgb(0, 0, 0));
+    background-color: var(rgb(168, 166, 166));
     margin-bottom: var(--space-lg);
 }
 

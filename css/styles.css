@@ -57,7 +57,7 @@ img {
 /* ==========================
    3. BASE ELEMENT STYLES
    ========================== */
-
+ul { padding-left: var(--space-lg); }
 body {
     background-color: var(--color-bg);
     color: var(--color-text);

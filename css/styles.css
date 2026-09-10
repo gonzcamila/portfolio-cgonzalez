@@ -185,3 +185,26 @@ header {
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-sm);
 }
+.skills-grid {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem));
+    gap: var(--space-md);
+}
+.skill-card {
+    padding: var(--space-md);
+    background-color: var(--color-surface-alt);
+    border-radius: var(--radius-md);
+}
+.project-list {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+}
+@media (min-width: 768px) {
+    .project-list { grid-template-columns: 1fr 1fr; }
+    .project-card.featured { grid-column: span 2; }
+}

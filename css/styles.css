@@ -26,10 +26,8 @@ img {
     --color-bg: #ffffff;
     --color-surface: #ffffff;
     --color-surface-alt: #ffffff;
-    --color-text: #111111;
-    --color-muted: #6b7280;
-    --color-accent: #8A9A5B;
-    --color-border: #8A9A5B;
+    --color-accent: #4a3b52;
+    --color-border: #4a3b52;
     --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
 
     /* Spacing — a modular scale */
@@ -85,7 +83,10 @@ p:last-child { margin-bottom: 0; }
 
 a { color: var(--color-text); }
 
-
+a:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+}
 /* ==========================
    4. LAYOUT
    Breakpoints used in this file:

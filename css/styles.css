@@ -24,12 +24,12 @@ img {
 :root {
     /* Color */
     --color-bg: #ffffff;
-    --color-surface: #f4f4f5;
+    --color-surface: #ffffff;
     --color-surface-alt: #ffffff;
     --color-text: #111111;
     --color-muted: #6b7280;
     --color-accent: #8A9A5B;
-    --color-border: #e5e7eb;
+    --color-border: #8A9A5B;
     --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
 
     /* Spacing — a modular scale */

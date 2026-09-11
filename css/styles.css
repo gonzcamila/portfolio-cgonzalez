@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lora:wght@400;700&display=swap');
+
 /* ==========================
    1. RESET
    ========================== */
@@ -26,6 +28,8 @@ img {
     --color-bg: #ffffff;
     --color-surface: #ffffff;
     --color-surface-alt: #ffffff;
+    --color-text: #1a1a1a;
+    --color-muted: #6b7280;
     --color-accent: #845b9a;
     --color-border: #845b9a;
     --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -43,7 +47,8 @@ img {
     --text-h1: 2.25rem;
     --leading-body: 1.6;
     --leading-heading: 1.2;
-    --font-stack: system-ui, 'Segoe UI', Tahoma, sans-serif;
+    --font-stack: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-serif: 'Lora', Georgia, serif;
 
     /* Layout */
     --page-width: 64rem;
@@ -67,17 +72,20 @@ body {
     padding: 20px;
 }
 
-h1 { font-size: var(--text-h1); line-height: var(--leading-heading); }
+h1, h2, h3 {
+    font-family: var(--font-serif);
+    line-height: var(--leading-heading);
+    margin-bottom: 20px;
+}
+h1 { font-size: var(--text-h1); }
 h2 {
     font-size: var(--text-h2);
-    line-height: var(--leading-heading);
     border-bottom: 3px solid var(--color-accent);
     padding-bottom: var(--space-sm);
     display: inline-block;
 }
-h3 { font-size: var(--text-h3); line-height: var(--leading-heading); }
+h3 { font-size: var(--text-h3); }
 
-h1, h2, h3 { margin-bottom: 20px; }
 p { margin-bottom: 20px; }
 p:last-child { margin-bottom: 0; }
 
@@ -101,6 +109,7 @@ nav {
 nav a {
     color: var(--color-text);
     text-decoration: none;
+    transition: color 0.2s;
 }
 nav a:hover { color: var(--color-accent); }
 
@@ -119,7 +128,7 @@ nav a:hover { color: var(--color-accent); }
     text-decoration: none;
 }
 
-section { margin-bottom: var(--space-xl); }
+section, aside { margin-bottom: var(--space-xl); }
 
 header {
     display: flex;

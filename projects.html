@@ -8,61 +8,100 @@
 </head>
 <body>
 
-<nav class="nav-container">
-    <a href="index.html" class="logo">Camila Gonzalez</a>
-    <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="resume.html">Resume</a>
-        <a href="index.html#contact">Contact</a>
-    </div>
-</nav>
-</body>
+    <a class="skip-link" href="#main">Skip to main content</a>
 
-<header>
-    <h1>Projects</h1>
-    <p> Here's a look at what I've built, what I'm working on now, and what's next!</p>
-</header>
+    <nav class="nav-container" aria-label="Main">
+        <a href="index.html" class="logo">Camila Gonzalez</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html" aria-current="page">Projects</a>
+            <a href="resume.html">Resume</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+    </nav>
 
-<section>
+    <header>
+        <h1>Projects</h1>
+        <p>Four web projects I built for WRIT 40363, plus other data work.</p>
+    </header>
 
+    <main id="main">
+        <section aria-labelledby="course-heading">
+            <h2 id="course-heading">Course projects</h2>
+            <ul class="project-list">
 
-    <section id="projects">
-  
-    <ul class="project-list">
-        <li class="project-card">
-            <h3>Personal Portfolio</h3>
-            <p><time datetime="2026-08">August 2026</time></p>
-            <p>The site you are reading. Built from scratch in HTML and CSS.</p>
-        </li>
+                <li class="project-card">
+                    <p class="project-number">Project 1</p>
+                    <h3><a href="projects/project1-original/index.html">Personal Portfolio</a></h3>
+                    <p>My first website, a multi-page portfolio with an about page, resume, and project list. It was where I learned how HTML gives a page structure and how CSS turns that structure into a design that works on any screen size.</p>
+                    <ul class="tech-list" aria-label="Technologies used">
+                        <li>HTML</li><li>CSS</li><li>Flexbox &amp; Grid</li><li>GitHub Pages</li>
+                    </ul>
+                    <p class="project-links">
+                        <a href="projects/project1-original/index.html">View project</a>
+                    </p>
+                </li>
 
-<li class="project-card">
-    <h3><a href="https://canva.link/bxhvxd867bu0gt3"  target="_blank" rel="noopener">Email Correspondence Network Analysis</a></h3>
-    <p>April 2026</p>
-    <p>A data visualization project examining the scale and structure of Jeffrey Epstein's email correspondents, using public Epstein Files data, R (ggplot), Gephi, and Graphy. Analyzes whether his top correspondents were primarily social/financial elites or operational staff.</p>
-</li>
+                <li class="project-card">
+                    <p class="project-number">Project 2</p>
+                    <h3><a href="projects/project2-tracker/index.html">Local Favorites Tracker</a></h3>
+                    <p>An interactive app for saving favorite places with a category, star rating, and notes. Users can search and filter their list or delete places, and everything stays saved after the page refreshes.</p>
+                    <ul class="tech-list" aria-label="Technologies used">
+                        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>localStorage</li>
+                    </ul>
+                    <p class="project-links">
+                        <a href="projects/project2-tracker/index.html">View project</a>
+                        <a href="https://github.com/gonzcamila/local-favorites-tracker" target="_blank" rel="noopener">Code on GitHub</a>
+                    </p>
+                </li>
 
-<li class="project-card">
-    <h3>Data Analysis Dashboard — Coming Soon</h3>
-    <p>Building an interactive dashboard in Python that cleans, explores, and visualizes real-world datasets to surface meaningful insights.</p>
-</li>
+                <li class="project-card">
+                    <p class="project-number">Project 3</p>
+                    <h3><a href="projects/project3-dashboard/index.html">Personal Dashboard</a></h3>
+                    <p>A dashboard that brings weather, a rotating quote, and a task list into one page. It loads its weather and quote data from JSON files with fetch(), saves tasks in the browser, and offers a light and dark theme.</p>
+                    <ul class="tech-list" aria-label="Technologies used">
+                        <li>HTML</li><li>CSS Grid</li><li>JavaScript</li><li>fetch() &amp; JSON</li><li>localStorage</li>
+                    </ul>
+                    <p class="project-links">
+                        <a href="projects/project3-dashboard/index.html">View project</a>
+                        <a href="https://github.com/gonzcamila/dashboard" target="_blank" rel="noopener">Code on GitHub</a>
+                    </p>
+                </li>
 
-<li class="project-card">
-        <h3>AI-Powered Web Application — Coming Soon</h3>
-        <p>Developing an AI-assisted web app that solves a real-world problem with a user-centered interface.</p>
-    </li>
+                <li class="project-card">
+                    <p class="project-number">Project Zed</p>
+                    <h3><a href="projects/project-zed/index.html">AI-Assisted Web App</a></h3>
+                    <p>A web app built with AI as a development partner, designed to solve a real-world problem with a user-centered interface. Description coming soon.</p>
+                    <ul class="tech-list" aria-label="Technologies used">
+                        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>AI-assisted development</li>
+                    </ul>
+                    <p class="project-links">
+                        <a href="projects/project-zed/index.html">View project</a>
+                    </p>
+                </li>
 
+            </ul>
+        </section>
 
+        <section aria-labelledby="other-heading">
+            <h2 id="other-heading">Other work</h2>
+            <ul class="project-list">
+                <li class="project-card">
+                    <h3><a href="https://canva.link/bxhvxd867bu0gt3" target="_blank" rel="noopener">Email Correspondence Network Analysis</a></h3>
+                    <p><time datetime="2026-04">April 2026</time></p>
+                    <p>A data visualization project examining the scale and structure of Jeffrey Epstein's email correspondents, using public Epstein Files data. It analyzes whether his top correspondents were primarily social and financial elites or operational staff.</p>
+                    <ul class="tech-list" aria-label="Technologies used">
+                        <li>R (ggplot)</li><li>Gephi</li><li>Graphy</li><li>Network analysis</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </main>
 
-
-    </ul>
-</section>
-
-</html>
-<footer>
-    <p>&copy; 2026 Camila Gonzalez</p>
-</footer>
+    <footer>
+        <p>&copy; 2026 Camila Gonzalez</p>
+    </footer>
 
 </body>
 </html>

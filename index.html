@@ -3,83 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Camila Gonzalez</title>
+    <meta name="description" content="Portfolio of Camila Gonzalez, a Digital Culture and Data Analytics student at TCU building websites, dashboards, and data tools.">
+    <title>Camila Gonzalez – Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <nav class="nav-container">
+    <nav class="nav-container" aria-label="Main">
         <a href="index.html" class="logo">Camila Gonzalez</a>
         <div class="nav-links">
-            <a href="index.html">Home</a>
+            <a href="index.html" aria-current="page">Home</a>
             <a href="about.html">About</a>
             <a href="projects.html">Projects</a>
             <a href="resume.html">Resume</a>
-            <a href="index.html#contact">Contact</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
 
-    <header>
-        <h1>Welcome</h1>
-        <p>
+    <header class="hero">
+        <div class="hero-text">
+            <h1>Welcome</h1>
+            <p>
             This is my Portfolio where you can explore my work, experience, and projects.
-        </p>
+           </p>
+            <p>I'm a junior at TCU studying Digital Culture and Data Analytics. This semester I went from static pages to interactive apps and data dashboards, all built from scratch.</p>
+            <div class="hero-actions">
+                <a class="btn btn-secondary" href="#contact">Get in touch</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/camila.jpeg" alt="Portrait of Camila Gonzalez">
+        </div>
     </header>
 
-    <main>
+    <main id="main">
 
-        <section class="about">
-            <div class="about-image">
-                <img src="images/camila.jpeg" alt="camila">
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About</h2>
+            <div class="reading">
+                <p>Before TCU, I spent almost four years as a legal assistant and became a certified Notary Public. That work taught me to be accurate, organized, and careful with details, and I bring the same habits to code. My goal is to become a data analyst at a law firm, where much of the work still lives in spreadsheets and documents that could be faster and easier to use.</p>
+                <p>This semester I learned how the web actually works. I started with HTML and CSS, then used JavaScript to make pages respond to people: saving their data, filtering lists, and loading information from files. I also learned to work like a developer, with Git for version control, GitHub Pages for deployment, and AI tools as a study partner to explain code I didn't understand yet. The biggest change is that code no longer looks like gibberish to me. I can read it, find where something broke, and fix it.</p>
+                <p><a href="about.html">More about me &rarr;</a></p>
             </div>
-            <div class="about-text">
-                <h2 id="about">About</h2>
-                <p>I'm a junior at TCU studying Digital Culture and Data Analytics, with a minor in Arts Leadership and Entrepreneurship. I'm interested in building digital products sites, dashboards, and tools that turn raw information into something companies can use.
+        </section>
 
-        <section id="skills">
-            <h2>Skills & Certifications</h2>
+        
+
+        <section id="skills" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills</h2>
             <ul class="skills-grid">
                 <li class="skill-card">
-                    <h3>Programming Languages</h3>
-                    <p>(R, Python, JavaScript)</p>
+                    <h3>HTML &amp; Accessibility</h3>
+                    <p>Semantic page structure, labeled forms, alt text, and readable color contrast.</p>
                 </li>
                 <li class="skill-card">
-                    <h3>Microsoft Office Suite</h3>
-                    <p>(Excel, PowerPoint, Word)</p>
+                    <h3>CSS &amp; Responsive Design</h3>
+                    <p>Design tokens, Flexbox, Grid, media queries, and light/dark themes.</p>
                 </li>
                 <li class="skill-card">
-                    <h3>Legal Administrative Support</h3>
+                    <h3>JavaScript</h3>
+                    <p>Event listeners, DOM updates, form handling, search and filtering.</p>
                 </li>
                 <li class="skill-card">
-                    <h3>Certified Notary Public</h3>
-                    <p>Valid through January 2027</p>
+                    <h3>Working with Data</h3>
+                    <p>Loading JSON with fetch(), saving with localStorage, plus R and Gephi for analysis.</p>
+                </li>
+                <li class="skill-card">
+                    <h3>AI-Assisted Development</h3>
+                    <p>Using AI to explain code, debug errors, and learn, while understanding what I ship.</p>
+                </li>
+                <li class="skill-card">
+                    <h3>Also</h3>
+                    <p>Python, Microsoft Office, legal administrative support, Texas Notary Public (through Jan. 2027).</p>
                 </li>
             </ul>
         </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact</h2>
             <p>The best way to reach me is by email.</p>
-            <ul>
+            <ul class="contact-list">
                 <li><a href="mailto:gonzcamilaa23@gmail.com">gonzcamilaa23@gmail.com</a></li>
-                <li><a href="https://github.com/gonzcamila" target="_blank" rel="noopener">My GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/camila-gonzalez-03a2b31b3" target="_blank" rel="noopener">My Linkedin</a></li>
+                <li><a href="https://github.com/gonzcamila" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/camila-gonzalez-03a2b31b3" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="resume.html">Resume</a></li>
             </ul>
         </section>
-
-        <aside id="resources">
-            <h2>Related Information</h2>
-            <ul>
-                <li><a href="https://www.tcu.edu/academics/programs/digital-culture-data-analytics.php" target="_blank" rel="noopener">TCU DCDA</a> — More info on my major, Digital Culture and Data Analytics.</li>
-                <li><a href="https://www.tcu.edu/academics/programs/arts-leadership-entrepreneurship.php" target="_blank" rel="noopener">TCU ARLE</a> — More info on my minor, Arts Leadership and Entrepreneurship</li>
-                <li><a href="https://www.sos.state.tx.us/statdoc/notary-public.shtml" target="_blank" rel="noopener">Texas Notary Public</a> — I hold an active Notary Public commission in Texas since 2023</li>
-            </ul>
-        </aside>
 
     </main>
 
     <footer>
-        <p>&copy; 2026 Camila Gonzalez</p>
+        <p>&copy; 2026 Camila Gonzalez · Built with HTML and CSS, hosted on GitHub Pages</p>
     </footer>
 
 </body>

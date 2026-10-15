@@ -8,35 +8,31 @@
 </head>
 <body>
 
-<nav class="nav-container">
-    <a href="index.html" class="logo">Camila Gonzalez</a>
-    <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="resume.html">Resume</a>
-        <a href="index.html#contact">Contact</a>
-    </div>
-</nav>
-</body>
+    <a class="skip-link" href="#main">Skip to main content</a>
 
-<header>
-    <h1>Resume</h1>
-    <p> Here is a summary of my education, experience, and skills!</p>
-</header>
-
-<main>
-    <section class="about">
-        <div class="about-image">
-            <img src="images/resumee.png" alt="Camila Gonzalez resume">
+    <nav class="nav-container" aria-label="Main">
+        <a href="index.html" class="logo">Camila Gonzalez</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="resume.html" aria-current="page">Resume</a>
+            <a href="index.html#contact">Contact</a>
         </div>
-    </section>
-</main>
+    </nav>
 
-</html>
-<footer>
-    <p>&copy; 2026 Camila Gonzalez</p>
-</footer>
+    <header>
+        <h1>Resume</h1>
+        <p>A summary of my education, experience, and skills.</p>
+    </header>
+
+    <main id="main">
+        <img class="resume-image" src="images/resumee.png" alt="Resume of Camila Gonzalez, listing education at TCU, legal assistant experience, and skills">
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Camila Gonzalez</p>
+    </footer>
 
 </body>
 </html>
